@@ -305,10 +305,6 @@ montoInput.addEventListener("input", function () {
   this.value = parseInt(value, 10).toLocaleString("es-AR"); // formateo con puntos
 });
 
-const montoInput = document.getElementById("monto");
-
-montoInput.addEventListener("input", function() {
-  // quitar todo lo que no sea número
   let value = this.value.replace(/\D/g, '');
 
   // si el input está vacío, dejarlo vacío
